@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Abrir página web OrangeHRM]]>
+    </line>
+    <line>
+      <![CDATA[Ingrese nombre de usuario y contraseña]]>
+    </line>
+    <line>
+      <![CDATA[Validar que ha iniciado sesión correctamente]]>
+    </line>
+    <line>
+      <![CDATA[Click en Admin - Ir a la página de administración]]>
+    </line>
+    <line>
+      <![CDATA[Click en Agregar]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar nombre de empleado válido]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar nombre de usuario válido]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar contraseña y confirmar]]>
+    </line>
+    <line>
+      <![CDATA[Clic en Save]]>
+    </line>
+    <line>
+      <![CDATA[Buscar el nombre de usuario]]>
+    </line>
+    <line>
+      <![CDATA[Clic en el botón Buscar]]>
+    </line>
+    <line>
+      <![CDATA[Verificar que el nombre de usuario exista en la tabla]]>
+    </line>
+    <line>
+      <![CDATA[Cerrar sesión]]>
+    </line>
+    <line>
+      <![CDATA[Cerrar Navegador]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13030" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:53 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13030" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:53 CST">
+      <class name="com.opensource.admin.qa.TC003_Admin_AddNewUser">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@4e7dc304]" name="beforeTest" is-config="true" duration-ms="11" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TC003_Admin_AddNewUser_TC()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@4e7dc304]" name="TC003_Admin_AddNewUser_TC" duration-ms="12976" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:53 CST">
+          <reporter-output>
+            <line>
+              <![CDATA[Abrir página web OrangeHRM]]>
+            </line>
+            <line>
+              <![CDATA[Ingrese nombre de usuario y contraseña]]>
+            </line>
+            <line>
+              <![CDATA[Validar que ha iniciado sesión correctamente]]>
+            </line>
+            <line>
+              <![CDATA[Click en Admin - Ir a la página de administración]]>
+            </line>
+            <line>
+              <![CDATA[Click en Agregar]]>
+            </line>
+            <line>
+              <![CDATA[Ingresar nombre de empleado válido]]>
+            </line>
+            <line>
+              <![CDATA[Ingresar nombre de usuario válido]]>
+            </line>
+            <line>
+              <![CDATA[Ingresar contraseña y confirmar]]>
+            </line>
+            <line>
+              <![CDATA[Clic en Save]]>
+            </line>
+            <line>
+              <![CDATA[Buscar el nombre de usuario]]>
+            </line>
+            <line>
+              <![CDATA[Clic en el botón Buscar]]>
+            </line>
+            <line>
+              <![CDATA[Verificar que el nombre de usuario exista en la tabla]]>
+            </line>
+            <line>
+              <![CDATA[Cerrar sesión]]>
+            </line>
+            <line>
+              <![CDATA[Cerrar Navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC003_Admin_AddNewUser_TC -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@4e7dc304]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-02-19T13:43:53 CST" finished-at="2021-02-19T13:43:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.opensource.admin.qa.TC003_Admin_AddNewUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
