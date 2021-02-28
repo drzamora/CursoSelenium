@@ -34,9 +34,9 @@ public class TC001_Admin_SearchEmployee {
 	  
 	  // STEP 2
 	  Reporter.log("Enter Username and Password");
-	  driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
-	  driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
-	  driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
+	  driver.findElement(By.xpath("//input[@id= 'txtUsername']")).sendKeys("Admin");
+	  driver.findElement(By.xpath("//input[@id= 'txtPassword']")).sendKeys("admin123");
+	  driver.findElement(By.xpath("//input[@id= 'btnLogin']")).click();
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  
 	  // STEP 3
@@ -51,11 +51,11 @@ public class TC001_Admin_SearchEmployee {
 	  
 	  // STEP 5
 	  Reporter.log("Search username in field");
-	  driver.findElement(By.xpath("//input[@id='searchSystemUser_userName']")).sendKeys("Admin");
+	  driver.findElement(By.xpath("//input[@id= 'searchSystemUser_userName']")).sendKeys("Admin");
 	  
 	  // STEP 6
 	  Reporter.log("Click Search");
-	  driver.findElement(By.xpath("//input[@id = 'searchBtn']")).click();
+	  driver.findElement(By.xpath("//input[@id= 'searchBtn']")).click();
 	  
 	  // STEP 7
 	  Reporter.log("Verify username exist in table");
@@ -67,7 +67,7 @@ public class TC001_Admin_SearchEmployee {
 	  
 	  // STEP 8
 	  Reporter.log("Log out");
-	  driver.findElement(By.xpath("//a[@id='welcome']")).click();
+	  driver.findElement(By.xpath("//a[@id= 'welcome']")).click();
 	  driver.findElement(By.xpath("//a[contains(text(), 'Logout')]")).click();
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  

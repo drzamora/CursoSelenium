@@ -1,0 +1,9 @@
+{
+"TC004_Admin_DeleteUser_POM": {
+"username":"Admin",
+"password":"admin123",
+"addUserName":"Richard Zamora269",
+"noRecordsFound":"No Records Found",
+"message":"OrangeHRM - Confirmation Required"
+}
+}

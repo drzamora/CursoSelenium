@@ -1,0 +1,10 @@
+{
+"TC003_Admin_AddNewUser_POM": {
+"username":"Admin",
+"password":"admin123",
+"employeeName":"David Morris",
+"userPassword":"Al1enw@re.2021",
+"userConfirmPassword":"Al1enw@re.2021",
+"statusUser": "Enable"
+}
+}

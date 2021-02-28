@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [QA_Regression]" parallel="tests">
+  <test thread-count="3" name="TC004(failed)" parallel="tests">
+    <classes>
+      <class name="com.opensource.admin.qa.TC004_Admin_DeleteUser_POM">
+        <methods>
+          <include name="afterTest"/>
+          <include name="TC004_Admin_DeleteUser_POM_TestScript"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.opensource.admin.qa.TC004_Admin_DeleteUser_POM -->
+    </classes>
+  </test> <!-- TC004(failed) -->
+</suite> <!-- Failed suite [QA_Regression] -->

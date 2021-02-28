@@ -1,11 +1,8 @@
 package com.opensource.admin.qa;
 
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeTest;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,9 +43,9 @@ public class TC002_Admin_SearchEmployee_NotExist {
 	  //Reportero de TestNG es una clase incorporada en TestNG
 	  Reporter.log("Ingrese nombre de usuario y contraseña");
 	  // Inserta el texto "Admin", "admin123" y ejecuta la accion click en el bóton login
-	  driver.findElement(By.xpath("//input[@id=\"txtUsername\"]")).sendKeys("Admin");
-	  driver.findElement(By.xpath("//input[@id=\"txtPassword\"]")).sendKeys("admin123");
-	  driver.findElement(By.xpath("//input[@id=\"btnLogin\"]")).click();
+	  driver.findElement(By.xpath("//input[@id= 'txtUsername']")).sendKeys("Admin");
+	  driver.findElement(By.xpath("//input[@id= 'txtPassword']")).sendKeys("admin123");
+	  driver.findElement(By.xpath("//input[@id= 'btnLogin']")).click();
 	  //Espera implícita se usa para decirle al controlador web que espere una cierta cantidad de tiempo.
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  
@@ -73,18 +70,18 @@ public class TC002_Admin_SearchEmployee_NotExist {
 	  //Reportero de TestNG es una clase incorporada en TestNG
 	  Reporter.log("Buscar nombre de usuario XYZ");
 	  // Inserta el texto "XYZ", 
-	  driver.findElement(By.xpath("//*[@id=\"searchSystemUser_userName\"]")).sendKeys("XYZ");
+	  driver.findElement(By.xpath("//*[@id= 'searchSystemUser_userName']")).sendKeys("XYZ");
 	  
 	  // STEP 6
 	  //Reportero de TestNG es una clase incorporada en TestNG
 	  Reporter.log("Clic en el botón buscar");
 	  //Click en el botón Search
-	  driver.findElement(By.xpath("//input[@id=\"searchBtn\"]")).click();
+	  driver.findElement(By.xpath("//input[@id= 'searchBtn']")).click();
 	  
 	  // STEP 7
 	  //Reportero de TestNG es una clase incorporada en TestNG
 	  Reporter.log("Verificar que el nombre de usuario no exista en la tabla");
-	  String actualUsername = driver.findElement(By.xpath("//table/tbody/tr/td")).getText();
+	  String actualUsername = driver.findElement(By.xpath("//tbody/tr[1]/td[1]")).getText();
       	Assert.assertEquals(actualUsername, "No Records Found");
       //SoftAssert soft = new SoftAssert();
       //soft.assertEquals(actualUsername, "Admon");
@@ -93,7 +90,7 @@ public class TC002_Admin_SearchEmployee_NotExist {
       //Reportero de TestNG es una clase incorporada en TestNG
 	  Reporter.log("Cerrar sesión");
 	  //Click en el menu welcome
-	  driver.findElement(By.xpath("//a[@id='welcome']")).click();
+	  driver.findElement(By.xpath("//a[@id= 'welcome']")).click();
 	  //Buscar el texto Logout y dar clic
 	  driver.findElement(By.xpath("//a[contains(text(), 'Logout')]")).click();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

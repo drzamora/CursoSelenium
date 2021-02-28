@@ -1,109 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[Abrir página web OrangeHRM]]>
+      <![CDATA[Launching...https://opensource-demo.orangehrmlive.com/]]>
     </line>
     <line>
-      <![CDATA[Ingrese nombre de usuario y contraseña]]>
+      <![CDATA[Login into Orange open source]]>
     </line>
     <line>
-      <![CDATA[Validar que ha iniciado sesión correctamente]]>
+      <![CDATA[Validate that you have logged in successfully]]>
     </line>
     <line>
-      <![CDATA[Click en Admin - Ir a la página de administración]]>
+      <![CDATA[Click Admin - Go to the admin page]]>
     </line>
     <line>
-      <![CDATA[Click en Agregar]]>
+      <![CDATA[Click Add]]>
     </line>
     <line>
-      <![CDATA[Ingresar nombre de empleado válido]]>
+      <![CDATA[Add User]]>
     </line>
     <line>
-      <![CDATA[Ingresar nombre de usuario válido]]>
+      <![CDATA[Search username in field]]>
     </line>
     <line>
-      <![CDATA[Ingresar contraseña y confirmar]]>
-    </line>
-    <line>
-      <![CDATA[Clic en Save]]>
-    </line>
-    <line>
-      <![CDATA[Buscar el nombre de usuario]]>
-    </line>
-    <line>
-      <![CDATA[Clic en el botón Buscar]]>
-    </line>
-    <line>
-      <![CDATA[Verificar que el nombre de usuario exista en la tabla]]>
-    </line>
-    <line>
-      <![CDATA[Cerrar sesión]]>
-    </line>
-    <line>
-      <![CDATA[Cerrar Navegador]]>
+      <![CDATA[Closed Browser]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13030" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:53 CST">
+  <suite name="Default suite" duration-ms="19769" started-at="2021-02-27T14:47:07 CST" finished-at="2021-02-27T14:47:26 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13030" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:53 CST">
-      <class name="com.opensource.admin.qa.TC003_Admin_AddNewUser">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@4e7dc304]" name="beforeTest" is-config="true" duration-ms="11" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:40 CST">
+    <test name="Default test" duration-ms="19769" started-at="2021-02-27T14:47:07 CST" finished-at="2021-02-27T14:47:26 CST">
+      <class name="com.opensource.admin.qa.TC003_Admin_AddNewUser_POM">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser_POM@5f282abb]" name="beforeTest" is-config="true" duration-ms="2391" started-at="2021-02-27T14:47:07 CST" finished-at="2021-02-27T14:47:09 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC003_Admin_AddNewUser_TC()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@4e7dc304]" name="TC003_Admin_AddNewUser_TC" duration-ms="12976" started-at="2021-02-19T13:43:40 CST" finished-at="2021-02-19T13:43:53 CST">
+        <test-method status="FAIL" signature="TC003_Admin_AddNewUser_POM_TestScript()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser_POM@5f282abb]" name="TC003_Admin_AddNewUser_POM_TestScript" duration-ms="17273" started-at="2021-02-27T14:47:09 CST" finished-at="2021-02-27T14:47:26 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.opensource.base.SeleniumWrapper.type(SeleniumWrapper.java:106)
+at com.opensource.admin.UserManagement.searchUser(UserManagement.java:63)
+at com.opensource.admin.qa.TC003_Admin_AddNewUser_POM.TC003_Admin_AddNewUser_POM_TestScript(TC003_Admin_AddNewUser_POM.java:95)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
             <line>
-              <![CDATA[Abrir página web OrangeHRM]]>
+              <![CDATA[Launching...https://opensource-demo.orangehrmlive.com/]]>
             </line>
             <line>
-              <![CDATA[Ingrese nombre de usuario y contraseña]]>
+              <![CDATA[Login into Orange open source]]>
             </line>
             <line>
-              <![CDATA[Validar que ha iniciado sesión correctamente]]>
+              <![CDATA[Validate that you have logged in successfully]]>
             </line>
             <line>
-              <![CDATA[Click en Admin - Ir a la página de administración]]>
+              <![CDATA[Click Admin - Go to the admin page]]>
             </line>
             <line>
-              <![CDATA[Click en Agregar]]>
+              <![CDATA[Click Add]]>
             </line>
             <line>
-              <![CDATA[Ingresar nombre de empleado válido]]>
+              <![CDATA[Add User]]>
             </line>
             <line>
-              <![CDATA[Ingresar nombre de usuario válido]]>
-            </line>
-            <line>
-              <![CDATA[Ingresar contraseña y confirmar]]>
-            </line>
-            <line>
-              <![CDATA[Clic en Save]]>
-            </line>
-            <line>
-              <![CDATA[Buscar el nombre de usuario]]>
-            </line>
-            <line>
-              <![CDATA[Clic en el botón Buscar]]>
-            </line>
-            <line>
-              <![CDATA[Verificar que el nombre de usuario exista en la tabla]]>
-            </line>
-            <line>
-              <![CDATA[Cerrar sesión]]>
-            </line>
-            <line>
-              <![CDATA[Cerrar Navegador]]>
+              <![CDATA[Search username in field]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC003_Admin_AddNewUser_TC -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@4e7dc304]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-02-19T13:43:53 CST" finished-at="2021-02-19T13:43:53 CST">
+        </test-method> <!-- TC003_Admin_AddNewUser_POM_TestScript -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser_POM@5f282abb]" name="afterTest" is-config="true" duration-ms="58" started-at="2021-02-27T14:47:26 CST" finished-at="2021-02-27T14:47:26 CST">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.190)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-1HOJCM7', ip: '192.168.50.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce131e0fbaacb2ff7c154c25c9094f69]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.190)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-1HOJCM7', ip: '192.168.50.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce131e0fbaacb2ff7c154c25c9094f69
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+at com.opensource.base.SeleniumWrapper.closeBrowser(SeleniumWrapper.java:246)
+at com.opensource.admin.qa.TC003_Admin_AddNewUser_POM.afterTest(TC003_Admin_AddNewUser_POM.java:109)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.afterRun(TestRunner.java:847)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
+            <line>
+              <![CDATA[Closed Browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.opensource.admin.qa.TC003_Admin_AddNewUser -->
+      </class> <!-- com.opensource.admin.qa.TC003_Admin_AddNewUser_POM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

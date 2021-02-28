@@ -1,0 +1,8 @@
+{
+"TC002_Admin_SearchEmployee_NotExist_POM": {
+"username":"Admin",
+"usernamexyz":"XYZ",
+"password":"admin123",
+"noRecordsFound":"No Records Found"
+}
+}
